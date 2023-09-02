@@ -1,0 +1,65 @@
+/* estilos.css */
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-container input {
+    border: 2px solid rgb(255, 176, 189);
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-container button {
+    border: 2px solid rgb(255, 176, 189);
+    border-radius: 5px;
+    background-color: pink;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  /* estilos.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1, a, form {
+    margin: 10px 0; /* Adicione um espaçamento para melhorar a aparência */
+  }
+  
+  /* estilos.css */
+
+body {
+    background-color: rgb(255, 240, 243); /* Cor de fundo rosa claro */
+    margin: 0; /* Remova as margens padrão do body para um visual mais limpo */
+    padding: 0; /* Remova o preenchimento padrão do body */
+  }
+  
+  /* estilos.css */
+
+/* Estilo para o botão link */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px; /* Ajuste o espaçamento interno conforme necessário */
+    background-color: pink; /* Cor de fundo rosa */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado padrão do link */
+    border: 2px solid pink; /* Borda rosa */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição suave para hover */
+  
+    /* Estilo para quando o mouse estiver sobre o link */
+    &:hover {
+      background-color: #ff69b4; /* Cor de fundo rosa mais clara ao passar o mouse */
+    }
+  }
+  

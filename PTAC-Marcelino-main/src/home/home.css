@@ -1,0 +1,21 @@
+/* home.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh; /* Isso faz com que o contêiner ocupe toda a altura da tela */
+    text-align: center;
+  }
+  
+  /* Estilize o h1 com uma cor rosa */
+  .h1-pink {
+    color: rgb(231, 99, 200);
+  }
+  
+  /* Estilos para os elementos individuais, se necessário */
+  a, p, input {
+    margin: 10px 0; /* Adicione espaçamento vertical entre os elementos, se necessário */
+  }
+  
