@@ -8,10 +8,11 @@ export default function Home() {
     const [name, setName] = useState("");
     
     return (
-        <div className="container"> {/* Aplicar a classe "container" aqui */}
-            <h1 className="h1-pink">Home</h1> {/* Aplicar a classe "h1-pink" aqui */}
-            <Link to="/todo">APP</Link>
+        <div className="container">
+            <h1 className="h1-pink">Home</h1>
+            <Link to="/todo" className="button-link">App</Link> {/* Aplicar a classe "button-link" aqui */}
             <p>{name}</p>
+           
         </div>
-    );
+    ); 
 }

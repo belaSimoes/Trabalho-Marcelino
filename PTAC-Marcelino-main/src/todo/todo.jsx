@@ -14,27 +14,35 @@ export default function Todo() {
     setLista([...lista, { Atividade: Atividade, id: id }]);
     setid(id + 1);
   }
-  return (
-    <div className="container">
-      <h1>TODO</h1>
-      <Link to="/home" className="button-link">App</Link> {/* Aplicar a classe "button-link" aqui */}
-      <form onSubmit={salvar}>
-        <div className="input-container">
-          <input
-            className="pink-border-input"
-            onChange={(e) => setAtividade(e.target.value)}
-            type="text"
-          />
-          <button className="pink-border-button">add</button>
-        </div>
-      </form>
 
-      {lista.map((atividade) => (
-        <div key={atividade.id}>
-          <p>{atividade.id}</p>
-          <p>{atividade.Atividade}</p>
-        </div>
-      ))}
+
+
+return (
+  <div className="container">
+    <h1>TODO</h1>
+    <Link to="/home" className="button-link">App</Link>
+    <form onSubmit={salvar}>
+      <div className="input-container">
+        <input
+          className="pink-border-input"
+          onChange={(e) => setAtividade(e.target.value)}
+          type="text"
+        />
+        <button className="pink-border-button">add</button>
+      </div>
+    </form>
+
+    <div> {/* Deixe esta div sem classes */}
+      <div className="values-area"> {/* Aplicar a classe "values-area" aqui */}
+        {lista.map((atividade) => (
+          <div key={atividade.id}>
+            <p>{atividade.id}</p>
+            <p>{atividade.Atividade}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  );
+  </div>
+);
+
 }

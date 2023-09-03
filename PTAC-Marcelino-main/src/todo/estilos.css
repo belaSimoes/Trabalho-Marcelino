@@ -22,7 +22,7 @@
     cursor: pointer;
   }
 
-  /* estilos.css */
+
 
 .container {
     display: flex;
@@ -32,10 +32,10 @@
   }
   
   h1, a, form {
-    margin: 10px 0; /* Adicione um espaçamento para melhorar a aparência */
+    margin: 5px 0; /* Adicione um espaçamento para melhorar a aparência */
   }
   
-  /* estilos.css */
+
 
 body {
     background-color: rgb(255, 240, 243); /* Cor de fundo rosa claro */
@@ -43,9 +43,7 @@ body {
     padding: 0; /* Remova o preenchimento padrão do body */
   }
   
-  /* estilos.css */
-
-/* Estilo para o botão link */
+ 
 .button-link {
     display: inline-block;
     padding: 10px 20px; /* Ajuste o espaçamento interno conforme necessário */
@@ -56,10 +54,20 @@ body {
     border-radius: 5px; /* Cantos arredondados */
     cursor: pointer;
     transition: background-color 0.3s ease; /* Efeito de transição suave para hover */
+    
   
     /* Estilo para quando o mouse estiver sobre o link */
     &:hover {
       background-color: #ff69b4; /* Cor de fundo rosa mais clara ao passar o mouse */
     }
   }
+
+
+.values-area {
+  max-height: 100px; /* Defina a altura máxima desejada */
+  overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
+  margin-top: 40px; /* Adicione um espaçamento superior para distanciar dos elementos acima */
+}
+
+
   
