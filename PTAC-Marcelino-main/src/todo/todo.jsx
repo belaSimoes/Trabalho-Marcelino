@@ -19,7 +19,10 @@ export default function Todo() {
     setAtividade("");
   }
 
-  const remover = (id) => {}
+  const remover = (id) => {
+    const listaBest = [];
+    lista.map(())
+  }
 
 return (
   <div className="container">
