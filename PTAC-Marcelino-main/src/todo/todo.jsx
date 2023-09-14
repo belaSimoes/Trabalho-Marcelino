@@ -8,12 +8,12 @@ export default function Todo() {
   const [lista, setLista] = useState([]);
   const [id, setid] = useState(1);
   const [Atividade, setAtividade] = useState("");
-  const [Faixa, setFaixa] = useState("");
-  const [Categoria, setCategoria] = useState("");
+  const [Nome, setNome] = useState("");
+  const [Idade, setIdade] = useState("");
 
   function salvar(e) {
     e.preventDefault();
-    setLista([...lista, { Atividade: Atividade, id: id, Faixa: Faixa, Categoria: Categoria 
+    setLista([...lista, { Atividade: Atividade, id: id, Nome: Nome, Idade: Idade 
     }]);
     setid(id + 1);
     setAtividade("");
@@ -34,14 +34,29 @@ return (
   <div className="container">
     <h1>TODO</h1>
     <Link to="/home" className="button-link">App</Link>
+    <h1>Seus dados</h1>
     <form onSubmit={salvar}>
       <div className="input-container">
         <input
           className="pink-border-input"
           onChange={(e) => setAtividade(e.target.value)}
           type="text"
-        />
-        <button className="pink-border-button">add</button>
+          value={Nome}
+          />
+       
+       <input
+          className="pink-border-input"
+          onChange={(e) => setAtividade(e.target.value)}
+          type="text"
+          value={Cpf}/>
+
+        <input
+          className="pink-border-input"
+          onChange={(e) => setAtividade(e.target.value)}
+          type="text"
+          value={Idade}/>
+          
+          <button className="pink-border-button">add</button>
       </div>
     </form>
 
