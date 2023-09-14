@@ -8,6 +8,7 @@ export default function Todo() {
   const [lista, setLista] = useState([]);
   const [id, setid] = useState(1);
   const [Atividade, setAtividade] = useState("");
+  const [Faixa, setFaixa] = useState("");
 
   function salvar(e) {
     e.preventDefault();
