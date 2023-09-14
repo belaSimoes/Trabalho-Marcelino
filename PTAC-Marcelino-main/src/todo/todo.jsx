@@ -9,10 +9,12 @@ export default function Todo() {
   const [id, setid] = useState(1);
   const [Atividade, setAtividade] = useState("");
   const [Faixa, setFaixa] = useState("");
+  const [Categoria, setCategoria] = useState("");
 
   function salvar(e) {
     e.preventDefault();
-    setLista([...lista, { Atividade: Atividade, id: id }]);
+    setLista([...lista, { Atividade: Atividade, id: id 
+    }]);
     setid(id + 1);
   }
 
