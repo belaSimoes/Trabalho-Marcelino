@@ -21,7 +21,13 @@ export default function Todo() {
 
   const remover = (id) => {
     const listaBest = [];
-    lista.map(())
+    lista.map((lista) => {
+      if (lista.id !== id) {
+        listaBest.push(lista);
+      }
+  });
+  setLista(listaBest);
+
   }
 
 return (
