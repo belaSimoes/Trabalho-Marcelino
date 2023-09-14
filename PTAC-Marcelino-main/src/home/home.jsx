@@ -1,5 +1,5 @@
 // Home.js
-import helloKittyImage from './hellokitty.png';
+
 
 // ...
 
@@ -17,7 +17,7 @@ export default function Home() {
             <h1 className="h1-pink">Home</h1>
             <Link to="/todo" className="button-link">App</Link> {/* Aplicar a classe "button-link" aqui */}
             <p>{name}</p>
-            <img src={helloKittyImage} alt="Hello Kitty" />
+           
         </div>
         
     ); 
