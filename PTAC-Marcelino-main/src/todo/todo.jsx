@@ -13,7 +13,7 @@ export default function Todo() {
 
   function salvar(e) {
     e.preventDefault();
-    setLista([...lista, { Atividade: Atividade, id: id 
+    setLista([...lista, { Atividade: Atividade, id: id, Faixa: Faixa, Categoria: Categoria 
     }]);
     setid(id + 1);
   }
