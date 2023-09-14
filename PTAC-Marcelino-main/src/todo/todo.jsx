@@ -16,9 +16,10 @@ export default function Todo() {
     setLista([...lista, { Atividade: Atividade, id: id, Faixa: Faixa, Categoria: Categoria 
     }]);
     setid(id + 1);
+    setAtividade("");
   }
 
-
+  const remover = (id) => {}
 
 return (
   <div className="container">
