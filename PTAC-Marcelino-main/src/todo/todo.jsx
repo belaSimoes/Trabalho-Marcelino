@@ -1,8 +1,6 @@
-// Todo.js
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './estilos.css'
+import './estilos.css';
 
 export default function Todo() {
   const [lista, setLista] = useState([]);
@@ -10,6 +8,7 @@ export default function Todo() {
   const [Nome, setNome] = useState("");
   const [Cpf, setCpf] = useState("");
   const [Idade, setIdade] = useState("");
+  const [exibirMensagem, setExibirMensagem] = useState(false); // Estado para controlar a visibilidade da mensagem
 
   function salvar(e) {
     e.preventDefault();
@@ -18,6 +17,7 @@ export default function Todo() {
     setNome("");
     setCpf("");
     setIdade("");
+    setExibirMensagem(true); // Quando os dados são enviados, exibir a mensagem
   }
 
   const remover = (id) => {
@@ -31,19 +31,25 @@ export default function Todo() {
       <h1>Seus dados</h1>
       <form onSubmit={salvar}>
         <div className="input-container">
+          <label htmlFor="nome">Nome:</label>
           <input
+            id="nome"
             className="pink-border-input"
             onChange={(e) => setNome(e.target.value)}
             type="text"
             value={Nome}
           />
+          <label htmlFor="cpf">CPF:</label>
           <input
+            id="cpf"
             className="pink-border-input"
             onChange={(e) => setCpf(e.target.value)}
             type="text"
             value={Cpf}
           />
+          <label htmlFor="idade">Idade:</label>
           <input
+            id="idade"
             className="pink-border-input"
             onChange={(e) => setIdade(e.target.value)}
             type="text"
@@ -53,11 +59,14 @@ export default function Todo() {
         </div>
       </form>
 
+      {exibirMensagem && (
+        <p className="mensagem-cor-de-rosa">Parabéns, você foi registrado!</p>
+      )}
+
       <div>
         <div className="values-area">
           {lista.map((item) => (
             <div key={item.id}>
-              <p>ID: {item.id}</p>
               <p>Nome: {item.Nome}</p>
               <p>CPF: {item.Cpf}</p>
               <p>Idade: {item.Idade}</p>
