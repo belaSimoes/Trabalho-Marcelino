@@ -7,8 +7,8 @@ export default function Home() {
     
     return (
         <div className="container">
-            <h1 className="h1-pink">Home</h1>
-            <Link to="/todo" className="button-link">App</Link>
+            <h1 className="h1-pink">Início</h1>
+            <Link to="/todo" className="button-link">Login</Link>
             <div className="image-container">
                 <img src="/sua-imagem.png" alt="Sua Imagem" />
             </div>

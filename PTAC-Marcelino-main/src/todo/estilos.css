@@ -32,63 +32,62 @@
   }
   
   h1, a, form {
-    margin: 5px 0; /* Adicione um espaçamento para melhorar a aparência */
+    margin: 5px 0;
   }
   
 
 
 body {
-    background-color: rgb(255, 240, 243); /* Cor de fundo rosa claro */
-    margin: 0; /* Remova as margens padrão do body para um visual mais limpo */
-    padding: 0; /* Remova o preenchimento padrão do body */
+    background-color: rgb(255, 240, 243); 
+    margin: 0; 
+    padding: 0; 
   }
   
  
 .button-link {
     display: inline-block;
-    padding: 10px 20px; /* Ajuste o espaçamento interno conforme necessário */
-    background-color: pink; /* Cor de fundo rosa */
-    color: white; /* Cor do texto */
-    text-decoration: none; /* Remover sublinhado padrão do link */
-    border: 2px solid pink; /* Borda rosa */
-    border-radius: 5px; /* Cantos arredondados */
+    padding: 10px 20px; 
+    background-color: pink; 
+    color: white;
+    text-decoration: none; 
+    border: 2px solid pink; 
+    border-radius: 5px; 
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Efeito de transição suave para hover */
+    transition: background-color 0.3s ease; 
     
   
-    /* Estilo para quando o mouse estiver sobre o link */
+   
     &:hover {
-      background-color: #ff69b4; /* Cor de fundo rosa mais clara ao passar o mouse */
+      background-color: #ff69b4; 
     }
   }
 
 
 .values-area {
-  max-height: 100px; /* Defina a altura máxima desejada */
-  overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
-  margin-top: 40px; /* Adicione um espaçamento superior para distanciar dos elementos acima */
+  max-height: 100px; 
+  overflow-y: auto; 
+  margin-top: 40px;
 }
 
 
 .pink-border-button {
   background-color: pink;
-  color: white; /* Define a cor do texto como branco para que contraste com o rosa */
-  border: none; /* Remove a borda padrão do botão */
-  padding: 5px 10px; /* Adicione preenchimento para melhorar a aparência */
-  cursor: pointer; /* Mude o cursor para um ponteiro ao passar o mouse sobre o botão */
+  color: white; 
+  border: none;
+  padding: 5px 10px; 
+  cursor: pointer; 
 }
 
-/* estilos.css */
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 100vh; /* Defina um tamanho mínimo de 100% da altura da viewport */
+  min-height: 100vh; 
 }
 
 h1 {
-  margin: 10px 0; /* Aumente o espaçamento superior para separar o título dos elementos abaixo */
-  flex-grow: 0; /* Impede que o título cresça e empurre os outros elementos para cima */
+  margin: 10px 0;
+  flex-grow: 0; 
 }
