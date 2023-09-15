@@ -70,4 +70,25 @@ body {
 }
 
 
-  
+.pink-border-button {
+  background-color: pink;
+  color: white; /* Define a cor do texto como branco para que contraste com o rosa */
+  border: none; /* Remove a borda padrão do botão */
+  padding: 5px 10px; /* Adicione preenchimento para melhorar a aparência */
+  cursor: pointer; /* Mude o cursor para um ponteiro ao passar o mouse sobre o botão */
+}
+
+/* estilos.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh; /* Defina um tamanho mínimo de 100% da altura da viewport */
+}
+
+h1 {
+  margin: 10px 0; /* Aumente o espaçamento superior para separar o título dos elementos abaixo */
+  flex-grow: 0; /* Impede que o título cresça e empurre os outros elementos para cima */
+}

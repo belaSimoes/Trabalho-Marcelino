@@ -27,8 +27,7 @@ export default function Todo() {
 
   return (
     <div className="container">
-      <h1>TODO</h1>
-      <Link to="/home" className="button-link">App</Link>
+      <h1>Login</h1>
       <h1>Seus dados</h1>
       <form onSubmit={salvar}>
         <div className="input-container">
@@ -62,7 +61,7 @@ export default function Todo() {
               <p>Nome: {item.Nome}</p>
               <p>CPF: {item.Cpf}</p>
               <p>Idade: {item.Idade}</p>
-              <button onClick={() => remover(item.id)}>Remover</button>
+              <button className="pink-border-button" onClick={() => remover(item.id)}>Remover</button>
             </div>
           ))}
         </div>
