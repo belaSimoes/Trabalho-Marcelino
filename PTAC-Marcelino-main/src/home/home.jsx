@@ -1,13 +1,6 @@
-// Home.js
-
-
-// ...
-
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import './home.css';
-import './sua-imagem.png'
 
 export default function Home() {
     const [name, setName] = useState("");
@@ -16,7 +9,9 @@ export default function Home() {
         <div className="container">
             <h1 className="h1-pink">Home</h1>
             <Link to="/todo" className="button-link">App</Link>
-            <img src="/sua-imagem.png"  /> 
+            <div className="image-container">
+                <img src="/sua-imagem.png" alt="Sua Imagem" />
+            </div>
             <p>{name}</p>
         </div>
     ); 
