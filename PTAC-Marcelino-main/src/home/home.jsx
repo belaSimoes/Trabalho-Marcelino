@@ -1,18 +1,21 @@
-import { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import './home.css';
+import "./Home.css";
 
 export default function Home() {
-    const [name, setName] = useState("");
-    
-    return (
-        <div className="container">
-            <h1 className="h1-pink">Início</h1>
-            <Link to="/todo" className="button-link">Login</Link>
-            <div className="image-container">
-                <img src="/sua-imagem.png" alt="Sua Imagem" />
-            </div>
-            <p>{name}</p>
-        </div>
-    ); 
+  return (
+    <div>
+      <div className="navbar">
+        <img src="/sua-logo.png" alt="Logo" className="logo" />
+        <Link to="/todo" className="button-link">
+          Entrar / Fazer Login
+        </Link>
+      </div>
+      <div className="introduction">
+        <h2>Bem-vindo à Nossa Loja</h2>
+        <p>Faça parte da nossa comunidade. Cadastre-se e aproveite as ofertas!</p>
+        <img src="/sua-imagem.png" alt="Imagem de Introdução" />
+      </div>
+    </div>
+  );
 }

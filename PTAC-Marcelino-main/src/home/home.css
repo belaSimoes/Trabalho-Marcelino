@@ -1,28 +1,26 @@
 
-
-.container {
+/* Estilos para a navbar */
+.navbar {
+  background-color: pink;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 25vh; 
-  text-align: center;
-}
-
-
-.button-link {
-  display: inline-block;
   padding: 10px 20px;
-  background-color: rgb(255, 157, 173);
-  color: white;
-  text-decoration: none;
-  border: 2px solid rgb(255, 117, 140);
+  border-bottom: 2px solid #ff758c;
+}
+
+.logo {
+  max-width: 50px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+/* Estilos para a introdução */
+.introduction {
+  background-color: #fff; /* Cor de fundo da introdução */
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #ff758c;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-
-.button-link:hover {
-  background-color: #ff2e97; 
-}
+/* Estilos adicionais conforme necessário */
