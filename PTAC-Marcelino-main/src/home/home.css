@@ -1,12 +1,12 @@
 
 /* Estilos para a navbar */
 .navbar {
-  background-color: pink;
+  background-color: rgb(255, 146, 186);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 2px solid #ff758c;
+  border-bottom: 2px solid #fa0680;
 }
 
 .logo {
