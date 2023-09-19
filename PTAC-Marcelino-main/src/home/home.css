@@ -1,12 +1,12 @@
 
 /* Estilos para a navbar */
 .navbar {
-  background-color: rgb(255, 146, 186);
+  background-color: rgb(255, 152, 190);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 2px solid #fa0680;
+  border-bottom: 2px solid #fa068c;
 }
 
 .logo {
@@ -15,7 +15,7 @@
 
 /* Estilos para a introdução */
 .introduction {
-  background-color: #fff; /* Cor de fundo da introdução */
+  background-color: #ffe3ed; /* Cor de fundo da introdução */
   text-align: center;
   padding: 20px;
   margin: 20px;
