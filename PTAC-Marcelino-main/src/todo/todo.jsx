@@ -7,7 +7,7 @@ export default function Todo() {
   const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || [];
   const [lista, setLista] = useState(listaLocalStorage);
 
-  const [id, setId] = useState(1);
+  const [id, setId] = useState(listaLocalStorage [listaLocalStorage.length - 1]?.id + 1 || 1);
   const [Nome, setNome] = useState("");
   const [Cpf, setCpf] = useState("");
   const [Idade, setIdade] = useState("");
