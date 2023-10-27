@@ -1,14 +1,19 @@
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './estilos.css';
 
 export default function Todo() {
-  const [lista, setLista] = useState([]);
+  const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || [];
+  const [lista, setLista] = useState(listaLocalStorage);
+
   const [id, setId] = useState(1);
   const [Nome, setNome] = useState("");
   const [Cpf, setCpf] = useState("");
   const [Idade, setIdade] = useState("");
   const [exibirMensagem, setExibirMensagem] = useState(false); // Estado para controlar a visibilidade da mensagem
+
+  useEffect(() => {localStorage.setItem("Lista", JSON.stringify(lista))},[lista]);
 
   function salvar(e) {
     e.preventDefault();
